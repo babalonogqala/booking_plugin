@@ -1,0 +1,69 @@
+# ── WordPress Core (don't track WP itself, only your plugin) ────────────────
+wp-admin/
+wp-includes/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/blogs.dir/
+
+# Keep only your plugin — ignore all other plugins & themes
+wp-content/plugins/*
+!wp-content/plugins/booking-manager/
+
+wp-content/themes/*
+# Uncomment below if you also track a custom theme:
+# !wp-content/themes/your-theme-name/
+
+# ── WordPress Config ─────────────────────────────────────────────────────────
+wp-config.php
+wp-config-local.php
+wp-config-sample.php
+
+# ── Local / Flywheel environment files ───────────────────────────────────────
+.local/
+conf/
+logs/
+mysql/
+ssl/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ── PHP / Composer ────────────────────────────────────────────────────────────
+vendor/
+composer.lock
+
+# ── Node / NPM (if you add build tools later) ─────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log
+dist/
+*.log
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# ── Backups ───────────────────────────────────────────────────────────────────
+*.sql
+*.sql.gz
+*.zip
+*.tar.gz
