@@ -56,3 +56,4 @@ class BM_Email {
         wp_mail( $booking->customer_email, $subject, $message );
     }
 }
+//done
